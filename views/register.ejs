@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    html,
+    body {
+      width: 100%;
+      height: 100%;
+      background: url(../public/images/banner6.jpg) no-repeat 100% 100%;
+      overflow: hidden;
+    }
+
+    form {
+      box-sizing: border-box;
+      padding: 20px;
+      width: 450px;
+      height: 500px;
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      margin: auto;
+      background-color: rgba(255, 255, 255, 0.5);
+
+    }
+
+    div span {
+      color: red;
+    }
+
+    .sj {
+      margin-top: 80px;
+      display: flex;
+      flex-direction: column;
+    }
+
+    /* input {} */
+
+    .btns {
+      margin-top: 50px;
+      display: flex;
+      justify-content: space-evenly;
+    }
+
+    img {
+      width: 100px;
+      height: 100px;
+      position: absolute;
+      left: 50%;
+      border-radius: 50%;
+      border: 10px solid #ffffff;
+      transform: translate(-50%, -50%);
+    }
+
+    input {
+      outline: none;
+    }
+
+    input[type='button'] {
+      width: 80px;
+      height: 40px;
+      border: none;
+      cursor: pointer;
+      box-shadow: 0 0 5px 10px wheat inset;
+    }
+
+    .btns a {
+      width: 80px;
+      height: 40px;
+      border: none;
+      cursor: pointer;
+      box-shadow: 0 0 5px 10px wheat inset;
+      text-align: center;
+      text-decoration: none;
+      line-height: 40px;
+    }
+  </style>
+</head>
+
+<body>
+  <form id='form_data'>
+    <img src="../public/images/Dlogo.jpg" alt="">
+    <div class="sj">
+      <label>用ID：</label><input type="text" name="username"><span></span>
+      <label>密码：</label><input type="password" name="password"><span></span>
+      <label>确认密码：</label><input type="password" name="password"><span></span>
+    </div>
+    <div class="btns">
+      <input type="button" value="确认" id="btn">
+    </div>
+  </form>
+  <script src="/public/js/common.js"></script>
+  <!-- <script src="/public/js/login.js"></script> -->
+  <script src="/public/js/register.js"></script>
+</body>
+
+</html>
